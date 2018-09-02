@@ -4,9 +4,9 @@
   </mat-card-header>  
   <img mat-card-image [src]="course.iconUrl" [alt]="course.description">
   <mat-card-content>
-    <p>{{ course.longDescription }}</p>
+    <div [innerHTML]="course.longDescription"></div>
   </mat-card-content>
   <mat-card-actions class="course-actions">
-    <button mat-raised-button color="primary">VIEW COURSE</button>
+    <button mat-raised-button color="primary" [routerLink]="['/courses', course.id]">VIEW COURSE</button>
   </mat-card-actions> 
 </mat-card>

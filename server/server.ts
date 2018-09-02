@@ -1,9 +1,7 @@
-
-
 import * as express from 'express';
-import {Application} from 'express';
-import {getAllCourses, getCourseById} from './get-courses.route';
-import {searchLessons} from './search-lessons.route';
+import { Application } from 'express';
+import { getAllCourses, getCourseById } from './get-courses.route';
+import { searchLessons } from './search-lessons.route';
 
 
 const app: Application = express();

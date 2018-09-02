@@ -1,6 +1,6 @@
-import {Request, Response} from 'express';
-import {LESSONS} from './db-data';
-import {setTimeout} from 'timers';
+import { Request, Response } from 'express';
+import { LESSONS } from './db-data';
+import { setTimeout } from 'timers';
 
 
 
@@ -10,7 +10,7 @@ export function searchLessons(req: Request, res: Response) {
     // parseInt --> To avoid 'parseInt missing radix parameter' error,
     // as explained in https://stackoverflow.com/questions/17681843/lint-warning-parseint-missing-radix-parameter
     // we have to add 10 as the value for the second parameter
-    const courseId = queryParams.courseId,
+    const courseId = +queryParams.courseId,
           filter = queryParams.filter || '',
           sortOrder = queryParams.sortOrder,
           pageNumber = parseInt(queryParams.pageNumber, 10) || 0,

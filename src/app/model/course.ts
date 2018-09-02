@@ -5,4 +5,5 @@ export interface Course {
   courseListIcon: string;
   longDescription: string;
   category: string;
+  lessonsCount: number;
 }

@@ -1,0 +1,43 @@
+.course {
+  text-align: center;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.course-thumbnail {
+  width: 10rem;
+  margin: 1rem auto 0 auto;
+  display: block;
+}
+
+.description-cell {
+  text-align: left;
+  margin: .625rem auto;
+}
+
+.duration-cell {
+  display: flex;
+  justify-content: center;  
+  /* text-align: center; */
+}
+
+.duration-cell mat-icon {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.2rem;
+}
+
+.spinner-container {
+  height: 18rem;
+  width: 30rem;
+  position: fixed;
+}
+
+.lessons-table {
+  min-height: 18rem;
+  margin-top: .625rem;
+}
+
+.spinner-container mat-spinner {
+  margin: 7.5rem auto 0 auto;
+}
